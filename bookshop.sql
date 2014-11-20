@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2014 at 10:13 AM
--- Server version: 5.6.20
--- PHP Version: 5.5.15
+-- Generation Time: Nov 20, 2014 at 10:21 AM
+-- Server version: 5.5.39
+-- PHP Version: 5.4.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -41,10 +41,10 @@ CREATE TABLE IF NOT EXISTS `account` (
 
 INSERT INTO `account` (`id`, `pass`, `perid`, `name`, `phone`, `email`) VALUES
 ('admin', 'admin', 1, 'Huynh Ngoc Nam', '0976528954', 'nam.huynh@gmail.com'),
-('hien', '1234', 3, 'Huynh Thi Thu Hien', '123456', NULL),
+('hien', '1234', 3, 'Huynh Thi Thu Hien', '123456', 'thuhien123@gmail.com'),
 ('nghia.nt', '123456', 1, 'Nguyen Trong Nghia', '0972357951', 'nghia.nt@gmail.com'),
-('quy', '1234', 3, 'Quy', NULL, NULL),
-('tuan', '12345', 2, NULL, NULL, NULL);
+('quy', '1234', 3, 'Quy', '0905928340', 'huuquy114@gmail.com'),
+('tuan', '12345', 2, 'Tuan', '0978326202', 'kimtuan257@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -65,8 +65,11 @@ CREATE TABLE IF NOT EXISTS `bill` (
 INSERT INTO `bill` (`billid`, `id`, `date`) VALUES
 ('BID01', 'quy', '2014-11-20 02:17:02'),
 ('BID02', 'nghia.nt', '2014-11-20 02:23:02'),
-('BID03', 'hien', '2014-10-15 03:00:21'),
-('BID04', 'tuan', '2014-11-20 03:09:21');
+('BID03', 'hien', '2014-11-20 03:00:21'),
+('BID04', 'tuan', '2014-11-20 03:09:21'),
+('BID05', 'hien', '2014-05-19 04:33:47'),
+('BID06', 'quy', '2013-12-11 08:36:03'),
+('BID07', 'nghia.nt', '2012-10-09 00:37:27');
 
 -- --------------------------------------------------------
 
@@ -90,7 +93,10 @@ INSERT INTO `billdetail` (`billid`, `bookid`, `amountsell`) VALUES
 ('BID02', 'B02', 1),
 ('BID03', 'B03', 2),
 ('BID04', 'B01', 1),
-('BID04', 'B02', 1);
+('BID04', 'B02', 1),
+('BID05', 'B06', 5),
+('BID06', 'B05', 3),
+('BID07', 'B07', 32);
 
 -- --------------------------------------------------------
 
@@ -114,7 +120,10 @@ INSERT INTO `book` (`bookid`, `bookname`, `categoryid`, `amount`, `unitprice`) V
 ('B01', 'Math 12', 'C02', 50, 30000),
 ('B02', 'Gone With The Wind', 'C01', 20, 150000),
 ('B03', 'A Little Princess', 'C03', 10, 55000),
-('B04', 'History 12', 'C02', 20, 20000);
+('B04', 'History 12', 'C02', 20, 20000),
+('B05', 'One Thousand and One Nights', 'C01', 17, 1000000),
+('B06', 'The Princess and the Pea', 'C03', 67, 21700),
+('B07', 'Book of Science', 'C02', 60, 320000);
 
 -- --------------------------------------------------------
 
