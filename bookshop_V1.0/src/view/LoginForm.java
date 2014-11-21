@@ -13,8 +13,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 /**
  *
- * @author huuquy
- */
+ * @author huuquy */
 public class LoginForm extends javax.swing.JFrame {
 
     /**
@@ -47,7 +46,7 @@ public class LoginForm extends javax.swing.JFrame {
         btLog.setText("Login");
         btLog.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        btExit.setText("Thoát");
+        btExit.setText("Exit");
         btExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btExitActionPerformed(evt);
@@ -113,6 +112,21 @@ public class LoginForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public JButton getBtExit() {
+        return btExit;
+    }
+
+    public JButton getBtLog() {
+        return btLog;
+    }
+
+    public JTextField getTfId() {
+        return tfId;
+    }
+
+    public JPasswordField getTfPass() {
+        return tfPass;
+    }
     
     
     
