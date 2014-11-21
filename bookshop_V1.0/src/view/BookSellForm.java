@@ -6,10 +6,14 @@
 
 package view;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
- * @author Thanh Hoa
- */
+ * @author Phuong */
 public class BookSellForm extends javax.swing.JFrame {
 
     /**
@@ -418,9 +422,100 @@ public class BookSellForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public JButton getBtnNhapLai() {
+        return BtnNhapLai;
+    }
+
+    public JComboBox getCbTK() {
+        return CbTK;
+    }
+
+    public JComboBox getCbTKCT() {
+        return CbTKCT;
+    }
+
+    public JTable getTableCSDLCTHD() {
+        return TableCSDLCTHD;
+    }
+
+    public JTable getTableCSDLHD() {
+        return TableCSDLHD;
+    }
+
+    public JButton getBtnLoad() {
+        return btnLoad;
+    }
+
+    public JButton getBtnQuayLai() {
+        return btnQuayLai;
+    }
+
+    public JButton getBtnSuaCTHD() {
+        return btnSuaCTHD;
+    }
+
+    public JButton getBtnSuaHD() {
+        return btnSuaHD;
+    }
+
+    public JButton getBtnThemCTHD() {
+        return btnThemCTHD;
+    }
+
+    public JButton getBtnThemHD() {
+        return btnThemHD;
+    }
+
+    public JButton getBtnThongtinCTHD() {
+        return btnThongtinCTHD;
+    }
+
+    public JButton getBtnThongtinHD() {
+        return btnThongtinHD;
+    }
+
+    public JButton getBtnXoaCTHD() {
+        return btnXoaCTHD;
+    }
+
+    public JButton getBtnXoaHD() {
+        return btnXoaHD;
+    }
+
+    public JTextField getTfIDCTHD() {
+        return tfIDCTHD;
+    }
+
+    public JTextField getTfIDCTHDon() {
+        return tfIDCTHDon;
+    }
+
+    public JTextField getTfIDHD() {
+        return tfIDHD;
+    }
+
+    public JTextField getTfIDHDon() {
+        return tfIDHDon;
+    }
+
+    public JTextField getTfIDNVien() {
+        return tfIDNVien;
+    }
+
+    public JTextField getTfIDTB() {
+        return tfIDTB;
+    }
+
+    public JTextField getTfSLuong() {
+        return tfSLuong;
+    }
+    
+    
     
     private void TableCSDLHDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TableCSDLHDMouseClicked
-
+        int index= TableCSDLHD.getSelectedRow();
+        tfIDHD.setText(String.valueOf(TableCSDLHD.getValueAt(index, 0)));
+        tfIDNVien.setText(String.valueOf(TableCSDLHD.getValueAt(index, 1)));
     }//GEN-LAST:event_TableCSDLHDMouseClicked
 
     private void btnXoaHDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXoaHDActionPerformed
@@ -428,7 +523,10 @@ public class BookSellForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnXoaHDActionPerformed
 
     private void TableCSDLCTHDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TableCSDLCTHDMouseClicked
-    
+        int index= TableCSDLCTHD.getSelectedRow();
+        tfIDCTHD.setText(String.valueOf(TableCSDLCTHD.getValueAt(index, 0)));
+        tfIDTB.setText(String.valueOf(TableCSDLCTHD.getValueAt(index, 1)));
+        tfSLuong.setText(String.valueOf(TableCSDLCTHD.getValueAt(index, 2)));
     }//GEN-LAST:event_TableCSDLCTHDMouseClicked
 
     private void BtnNhapLaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnNhapLaiActionPerformed
