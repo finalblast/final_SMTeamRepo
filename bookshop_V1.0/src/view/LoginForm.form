@@ -90,7 +90,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btExit">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Tho&#xe1;t"/>
+        <Property name="text" type="java.lang.String" value="Exit"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btExitActionPerformed"/>

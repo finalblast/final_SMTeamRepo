@@ -6,9 +6,16 @@
 
 package view;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
- * @author ThanhHoa */
+ * @author Phuong */
 public class BookForm extends javax.swing.JFrame {
     private int type;
     /**
@@ -399,7 +406,117 @@ public class BookForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
+    public JComboBox getCbTK() {
+        return CbTK;
+    }
+
+    public JTable getTableCSDL() {
+        return TableCSDL;
+    }
+
+    public JTable getTbType() {
+        return TbType;
+    }
+
+    public JButton getBtnLoad() {
+        return btnLoad;
+    }
+
+    public JButton getBtnNhapLai() {
+        return btnNhapLai;
+    }
+
+    public JButton getBtnQuayLai() {
+        return btnQuayLai;
+    }
+
+    public JButton getBtnSua() {
+        return btnSua;
+    }
+
+    public JButton getBtnSuaType() {
+        return btnSuaType;
+    }
+
+    public JButton getBtnThem() {
+        return btnThem;
+    }
+
+    public JButton getBtnThemType() {
+        return btnThemType;
+    }
+
+    public JButton getBtnThongtin() {
+        return btnThongtin;
+    }
+
+    public JButton getBtnXoa() {
+        return btnXoa;
+    }
+
+    public JButton getBtnXoaType() {
+        return btnXoaType;
+    }
+
+    public JTextField getTfDonGia() {
+        return tfDonGia;
+    }
+
+    public JTextField getTfDonVi() {
+        return tfDonVi;
+    }
+
+    public JTextField getTfIDTB() {
+        return tfIDTB;
+    }
+
+    public JTextField getTfIDThem() {
+        return tfIDThem;
+    }
+
+    public JTextField getTfName() {
+        return tfName;
+    }
+
+    public JTextField getTfType() {
+        return tfType;
+    }
+
+    public JTextField getTfTypeID() {
+        return tfTypeID;
+    }
+
+    public JTextField getTfTypeName() {
+        return tfTypeName;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public JLabel getjLabel11() {
+        return jLabel11;
+    }
+
+    public JLabel getjLabel3() {
+        return jLabel3;
+    }
+
+    public JLabel getjLabel6() {
+        return jLabel6;
+    }
+
+    public JLabel getjLabel7() {
+        return jLabel7;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public JLabel getjLabel2() {
+        return jLabel2;
+    }
     
     
     private void tfDonGiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfDonGiaActionPerformed
@@ -411,7 +528,12 @@ public class BookForm extends javax.swing.JFrame {
     }//GEN-LAST:event_CbTKActionPerformed
 
     private void TableCSDLMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TableCSDLMouseClicked
-        
+        int index= TableCSDL.getSelectedRow();
+        tfIDThem.setText(String.valueOf(TableCSDL.getValueAt(index, 0)));
+        tfName.setText(String.valueOf(TableCSDL.getValueAt(index, 1)));
+        tfType.setText(String.valueOf(TableCSDL.getValueAt(index, 2)));
+        tfDonVi.setText(String.valueOf(TableCSDL.getValueAt(index, 3)));
+        tfDonGia.setText(String.valueOf(TableCSDL.getValueAt(index, 4)));
     }//GEN-LAST:event_TableCSDLMouseClicked
 
     private void btnSuaTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuaTypeActionPerformed
@@ -419,7 +541,9 @@ public class BookForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSuaTypeActionPerformed
 
     private void TbTypeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TbTypeMouseClicked
-        
+        int index= TbType.getSelectedRow();
+        tfTypeID.setText(String.valueOf(TbType.getValueAt(index, 0)));
+        tfTypeName.setText(String.valueOf(TbType.getValueAt(index, 1)));
     }//GEN-LAST:event_TbTypeMouseClicked
 
     /**
