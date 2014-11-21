@@ -6,6 +6,11 @@
 
 package view;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
  * @author Phuong
@@ -334,7 +339,76 @@ public class AccountForm extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-   
+
+    public JComboBox getCbMQ() {
+        return CbMQ;
+    }
+
+    public JTable getTableCSDL() {
+        return TableCSDL;
+    }
+
+    public JTable getTableType() {
+        return TableType;
+    }
+
+    public JButton getBtnLoad() {
+        return btnLoad;
+    }
+
+    public JButton getBtnNhapLai() {
+        return btnNhapLai;
+    }
+
+    public JButton getBtnSua() {
+        return btnSua;
+    }
+
+    public JButton getBtnThem() {
+        return btnThem;
+    }
+
+    public JButton getBtnThongtin() {
+        return btnThongtin;
+    }
+
+    public JButton getBtnXoa() {
+        return btnXoa;
+    }
+
+    public JButton getBtnQuayLai() {
+        return btnQuayLai;
+    }
+    
+    public JComboBox getCbTK() {
+        return cbTK;
+    }
+
+    public JTextField getTfEmail() {
+        return tfEmail;
+    }
+
+    public JTextField getTfIDTK() {
+        return tfIDTK;
+    }
+
+    public JTextField getTfIDThem() {
+        return tfIDThem;
+    }
+
+    public JTextField getTfName() {
+        return tfName;
+    }
+
+    public JTextField getTfPass() {
+        return tfPass;
+    }
+
+    public JTextField getTfPhone() {
+        return tfPhone;
+    }
+    
+    
     
     private void btnQuayLaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuayLaiActionPerformed
 
