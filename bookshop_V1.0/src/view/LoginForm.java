@@ -13,7 +13,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 /**
  *
- * @author K55VM
+ * @author huuquy
  */
 public class LoginForm extends javax.swing.JFrame {
 
@@ -113,21 +113,6 @@ public class LoginForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public JButton getBtExit() {
-        return btExit;
-    }
-
-    public JButton getBtLog() {
-        return btLog;
-    }
-
-    public JTextField getTfId() {
-        return tfId;
-    }
-
-    public JPasswordField getTfPass() {
-        return tfPass;
-    }
     
     
     
