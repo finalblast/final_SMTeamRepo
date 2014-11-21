@@ -8,7 +8,8 @@ package view;
 
 /**
  *
- * @author ThanhHoa */
+ * @author Phuong
+ */
 public class BookForm extends javax.swing.JFrame {
     private int type;
     /**
@@ -398,9 +399,6 @@ public class BookForm extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    
-    
     
     private void tfDonGiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfDonGiaActionPerformed
         // TODO add your handling code here:
@@ -411,7 +409,12 @@ public class BookForm extends javax.swing.JFrame {
     }//GEN-LAST:event_CbTKActionPerformed
 
     private void TableCSDLMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TableCSDLMouseClicked
-        
+        int index= TableCSDL.getSelectedRow();
+        tfIDThem.setText(String.valueOf(TableCSDL.getValueAt(index, 0)));
+        tfName.setText(String.valueOf(TableCSDL.getValueAt(index, 1)));
+        tfType.setText(String.valueOf(TableCSDL.getValueAt(index, 2)));
+        tfDonVi.setText(String.valueOf(TableCSDL.getValueAt(index, 3)));
+        tfDonGia.setText(String.valueOf(TableCSDL.getValueAt(index, 4)));
     }//GEN-LAST:event_TableCSDLMouseClicked
 
     private void btnSuaTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuaTypeActionPerformed
@@ -419,7 +422,9 @@ public class BookForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSuaTypeActionPerformed
 
     private void TbTypeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TbTypeMouseClicked
-        
+        int index= TbType.getSelectedRow();
+        tfTypeID.setText(String.valueOf(TbType.getValueAt(index, 0)));
+        tfTypeName.setText(String.valueOf(TbType.getValueAt(index, 1)));
     }//GEN-LAST:event_TbTypeMouseClicked
 
     /**
