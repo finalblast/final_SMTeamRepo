@@ -20,7 +20,7 @@ import view.MainForm;
 import view.LoginForm;
 /**
  *
- * @author Kim Tuan
+ * @author K55VM
  */
 public class Login_ctr {
     private LoginForm form;
@@ -86,7 +86,21 @@ public class Login_ctr {
             }
             }
         });
-       
+        /*
+        *Bat su kien khi nhan nut Register
+        */
+        form.getBtRegister().addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    //Goi class
+                    new Register_ctr();
+                } catch (Exception ex) {
+                    Logger.getLogger(Login_ctr.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        });
     }
     
 }

@@ -16,8 +16,8 @@ import javax.swing.table.AbstractTableModel;
  */
 public class TableModel extends AbstractTableModel {
 
-    private Vector colHeaders;                      //Chua ten cot
-    private Vector tbData;                          //Chua du lieu
+    private Vector colHeaders;                       //chua ten cot 
+    private Vector tbData;                           //Chua du lieu
     /*
     *Truyen ResultSet chua du lieu lay tu database vao Table
     */
@@ -49,6 +49,11 @@ public class TableModel extends AbstractTableModel {
     public int getColumnCount() {
         return colHeaders.size();
     }
+    //Doc ten cot
+    public String getColumnName(int column) {
+        return (String) (colHeaders.elementAt(column));
+    }
+    
     //Lay gia tri tu Table theo gia tri row, column
     @Override
     public Object getValueAt(int row, int column) {

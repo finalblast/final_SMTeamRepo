@@ -18,7 +18,7 @@ import view.BookSellForm;
 import view.MainForm;
 /**
  *
- * @author huuquy
+ * @author K55VM
  */
 public class BookSell_ctr {
     

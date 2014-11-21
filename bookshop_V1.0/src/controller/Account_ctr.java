@@ -1,4 +1,4 @@
-﻿/*
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -18,7 +18,7 @@ import view.MainForm;
 import view.AccountForm;
 /**
  *
- * @author hong quan
+ * @author K55VM
  */
 public class Account_ctr {
     private AccountForm form = new AccountForm();
@@ -97,17 +97,17 @@ public class Account_ctr {
                         Statement stt = cnt.createStatement();
                         if("ID".equals(tk)){
                         String sql = "select * from account where id like '%" +tukhoa+"%'";
-                        ResultSet rs = stt.executeQuery(sql);//đây
+                        ResultSet rs = stt.executeQuery(sql);
                         form.getTableCSDL().setModel(new TableModel(rs));
                         }
                         if("Name".equals(tk)){
                         String sql = "select * from account where name like '%" + tukhoa+"%'";
-                        ResultSet rs = stt.executeQuery(sql);//đây
+                        ResultSet rs = stt.executeQuery(sql);
                         form.getTableCSDL().setModel(new TableModel(rs));
                         }
                         if("Permission Id".equals(tk)){
                         String sql = "select * from account where perid like '%" + tukhoa+"%'";
-                        ResultSet rs = stt.executeQuery(sql);//đây
+                        ResultSet rs = stt.executeQuery(sql);
                         form.getTableCSDL().setModel(new TableModel(rs));
                         }
                     }

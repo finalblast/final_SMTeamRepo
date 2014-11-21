@@ -15,7 +15,8 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Phuong */
+ * @author K55VM
+ */
 public class BookForm extends javax.swing.JFrame {
     private int type;
     /**

@@ -13,7 +13,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Phuong
+ * @author K55VM
  */
 public class AccountForm extends javax.swing.JFrame {
     
